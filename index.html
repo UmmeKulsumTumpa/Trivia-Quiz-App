@@ -4,38 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TrivQuiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section id="start-screen">
-        <div class="header">
-            <h1 id="header-title">TrivQuiz Challenge</h1>
-        </div>
 
-        <div class="body">
-            <h2 id="body-title">Test your knowledge with TrivQuiz</h2>
-            <p id="body-description">Answer trivia questions and see how well you know the world!</p>
-            <button type="button" id="start-btn">Start Quiz</button>
-        </div>
-        
-        <div class="footer">
-            <p id="footer-text">© 2025 TrivQuiz. All rights reserved.</p>
-        </div>
-    </section>
+    <div id="start-screen" class="screen">
+        <h1>Welcome to the Quiz!</h1>
+        <button id="start-btn">Start Quiz</button>
+    </div>
 
-    <section id="quiz-screen">
+    <div id="quiz-screen" class="screen hidden">
+        <div id="timer">Time: <span id="time">30</span>s</div>
+        <div id="question-container"></div>
+        <div id="answers-container"></div>
+    </div>
 
-    </section>
+    <div id="result-screen" class="screen hidden">
+        <h2>Quiz Finished!</h2>
+        <p id="score"></p>
+        <button id="restart-btn">Restart Quiz</button>
+    </div>
 
-    <section id="result-screen" class="hidden">
-        <div class="header">
-            <h1 id="result-header-title">Quiz Results</h1>
-        </div>
-
-        <div class="body">
-            <h2 id="result-body-title">Your Score: <span id="score"></span></h2>
-            <p id="result-body-description">Thank you for playing!</p>
-            <a href="#" class="restart-button">Restart Quiz</a> 
-        </div>
-    </section>
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
