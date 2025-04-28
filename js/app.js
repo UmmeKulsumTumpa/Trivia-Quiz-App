@@ -1,11 +1,12 @@
 import { Quiz } from './quiz.js';
-import { Timer } from './timer.js';
-import { UI } from './ui.js';
+import { Timer } from './timer.js'; // class
+import { UI } from './ui.js'; // object
+import { config } from './config.js';
 
 export class App {
     constructor() {
         this.quiz = new Quiz();
-        this.timer = new Timer(30, () => this.handleTimeout(), (time) => UI.updateTimer(time));
+        this.timer = new Timer(config.timePerQuestion, () => this.handleTimeout(), (time) => UI.updateTimer(time));
     }
 
     async start() {
