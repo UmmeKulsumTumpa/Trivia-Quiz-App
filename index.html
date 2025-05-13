@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrivQuiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="start-screen" class="screen">
+        <h1>Welcome to the Quiz!</h1>
+        <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="quiz-screen" class="screen hidden">
+        <div id="timer">Time: <span id="time">30</span>s</div>
+        <div id="question-container"></div>
+        <div id="answers-container"></div>
+    </div>
+
+    <div id="result-screen" class="screen hidden">
+        <h2>Quiz Finished!</h2>
+        <p id="score"></p>
+        <button id="restart-btn">Restart Quiz</button>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
